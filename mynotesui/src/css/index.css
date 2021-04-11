@@ -1,0 +1,40 @@
+.html {
+  font-size: 62.5%;
+}
+
+.html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: grid;
+  background-color: papayawhip;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2rem minmax(5rem, auto);
+  max-width: 80%;
+  margin: 0% 10%;
+}
+
+.header {
+  text-align: center;
+  position: sticky; /*not working*/
+  grid-column: span 2;
+  background-color: moccasin;
+  padding-top: 0.3rem;
+}
+
+.tile {
+  margin: 0.7rem;
+  padding: 0.2rem 0.7rem;
+  background-color: rgb(228, 220, 140);
+  border-radius: 0.5rem;
+}
+
+@media all and (min-width: 641px) {
+  .home {
+    background-color: floralwhite;
+  }
+}
